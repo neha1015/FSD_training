@@ -9,7 +9,10 @@ module.exports={
     multiply,add
 };
 
-export default function(multiply,add){
-    // return x*y;
-    // return x+y;
+export default function multiply(x,y){
+    return x*y;
+};
+ 
+export default function add(x,y){
+    return x+y;
 };
