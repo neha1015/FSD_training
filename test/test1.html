@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter Page</title>
+    <link rel="stylesheet" href="test1.css">
+</head>
+
+<body>
+    <h1> Currency Converter</h1>
+    <hr>
+    <div class="container">
+        <div class="main">
+            <div class="form-group">
+                <label for="oamount">Amount:</label>
+                <input type="text" class="form-control searchBox" placeholder="Enter Amount" id="oamount">
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">From</span>
+                        </div>
+                        <select class="form-control from" id="sel1">
+                            <option value="">Select One</option>
+                            <option value="USD">USD-American dollar</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="col-sm-6">
+                    <div class="input-group mb-3">
+                        <div class="input-group-prepend">
+                            <span class="input-group-text">To</span>
+                        </div>
+                        <select class="form-control to" id="sel2">
+                            <option value="">Select One</option>
+                            <option value="INR">INR</option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center">
+                <button class="btn btn-primary convert m-2" type="submit">Convert</button>
+                <button class="btn btn-primary m-2" onclick="clearVal()">Reset</button>
+            </div>
+         </div>
+
+        <div id="finalAmount" class="text-center">
+            <h2>Result: <span class="finalValue">
+                </span>
+            </h2>
+        </div>
+    </div>
+    <script src="test1.js"></script>
+</body>
+
+</html>
